@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>DemonSlayer</Title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <style type="text/css">
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="startScreen">
+        <p>
+            My name is Bayley I made this game
+        </p>
+        <p>
+            It is based off a cool show I watched
+        </p>
+        <button id='startGame'>Start Game</button>
+    </div>
+
+    <div id="gameOver" class="hide">
+        <p>
+            Your demon slayer has died
+        </p>
+        <p>
+            Unfortunatly this is not uncommon, in this profession
+        </p>
+        <button id='replay'>Replay</button>
+    </div>
+    <div id="ranAway" class="hide">
+        <p>
+            Your demon slayer has ran away
+        </p>
+        <p>
+            He will now live a life drowning in shame and regret
+        </p>
+        <button id='replay'>Replay</button>
+    </div>
+    <div id="youWin" class="hide">
+        <p>
+            You have defeated the Demon King Muzan!
+        </p>
+        <p>
+            The world is safe, but you are now out of a job, I hoped you saved up...
+        </p>
+    </div>
+
+    <div id="charSelect" class="hide">
+        <div class="chars">
+            <button id="Zenitsu">
+                <img src="img/TransperantZ1.png">
+            </button>
+            <div id="zInfoBox"></div>
+        </div>
+        <div class="chars">
+            <button id="Tanjiro"><img src="img/Tanjiro.png"></button>
+            <div id="tInfoBox"></div>
+        </div>
+        <div class="chars">
+            <button id="Inosuke"><img src="img/Inouske1.png"></button>
+            <div id="iInfoBox"></div>
+        </div>
+    </div>
+    <div id="gameWrapper" class="hide">
+        <div id="healthbars">
+            <div id="slayerDamageBar"></div>
+            <div id="slayerHealthBar"></div>
+            <div id="demonDamageBar"></div>
+            <div id="demonHealthBar"></div>
+        </div>
+        <canvas id="background" width="1450" height="600"></canvas>
+        <div id="inputBox">
+            <div id="output"></div>
+            <div id="openingQuestion"></div>
+            <div id="responseButtons">
+                <button class="submit">Attack</button>
+                <button class="submit">Defend</button>
+                <button class="submit">Run</button>
+                <button class="submit">Shop</button>
+                <div id="infoDisplay"></div>
+            </div>
+            <div id="moneyCounter">$</div>
+        </div>
+        <div id="imageLoader" class="loader">
+            <img src="img/Tanjiro.png" alt="Tanjiro1" name="tanjiro" />
+            <img src="img/Tanjiro2.png" alt="Tanjiro2" name="tanjiro2" />
+        </div>
+        <div id="imageLoaderZ" class="loader">
+            <img src="img/TransperantZ1.png" alt="" />
+            <img src="img/TransperantZ2.png" alt="" />
+        </div>
+        <div id="imageLoaderI" class="loader">
+            <img src="img/Inouske1.png" alt="" />
+            <img src="img/Inouske2.png" alt="" />
+        </div>
+        <div id="demonImageLoader" class="loader" class="demon">
+            <img src="img/demon sprite.png" alt="" />
+            <img src="img/demon sprite2.png" alt="" />
+        </div>
+        <div id="miniBossImageLoader" class="loader" class="demon">
+            <img src="img/Miniboss1.png" alt="" />
+            <img src="img/Miniboss2.png" alt="" />
+        </div>
+        <div id="muzanImageLoader" class="loader" class="demon">
+            <img src="img/muzan1.png" alt="" />
+            <img src="img/muzan2.png" alt="" />
+        </div>
+    </div>
+    <img id="poisonEffect" class="loader" src="img/poison effect.png" alt="">
+    <img id="bleedEffect" class="loader" src="img/bleed effect.png"
+        alt="">
+    <img id="curseEffect" class="loader" src="img/curse effect.png" alt="">
+
+    <script src="js/Stage.js"></script>
+    <script src="js/Classes.js"></script>
+    <script src="js/DemonSlayer.js"></script>
+</body>
+
+</html>

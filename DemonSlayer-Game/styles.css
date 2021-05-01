@@ -1,0 +1,239 @@
+#startScreen{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    background-image: url('https://wallpapercave.com/wp/wp4445515.jpg');
+    background-size:cover;
+    font-size: 20px;
+    color:white;
+    text-shadow: 0 0 10px gray;
+    min-height: 100vh;
+    justify-content:space-around;
+}
+#gameOver{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    background-image: url('https://i.ytimg.com/vi/CcX86qJ81cQ/hqdefault.jpg');
+    background-size: cover;
+    color:red;
+    font-size: 35px;
+    text-shadow: 0 0 10px black;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+#ranAway{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    background-image: url('https://i.pinimg.com/originals/b4/d3/4c/b4d34c3aaee8940615a6d79ddae65d4f.gif');
+    background-size: cover;
+    background-position: center;
+    color:white;
+    font-size: 35px;
+    text-shadow: 0 0 10px gray;
+    min-height: 100vh;
+    min-width: 10vh;
+    justify-content: space-around;
+}
+#youWin{
+    display: flex;
+    align-items: center;
+    background-image: url('https://mangathrill.com/wp-content/uploads/2019/12/dafasssss.jpg');
+    background-size: cover;
+    color:white;
+    font-size: 35px;
+    text-shadow: 0 0 10px gray;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+#startGame{
+    width: 80px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#startGame:hover{
+    opacity: 1;
+}
+
+#charSelect{
+    display:flex;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/originals/39/02/65/39026589ee587a08e470c2ea796dc4a9.jpg');
+    background-size:cover;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+.chars{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+#charSelect button{
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#charSelect img{
+    height: 250px;
+}
+
+#charSelect button:hover{
+    opacity: 1;
+}
+
+.hide{
+    display: none !important;
+}
+
+#introWrapper > *{
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+  
+body #background{
+    background-image: url("https://pm1.narvii.com/7841/7b228eeb57ed315347ece7414d7032bb185d6123r4-750-375_00.jpg");
+    background-size: cover;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#inputBox{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    outline: solid 3px grey;
+    width: 500px;
+}
+
+#output{
+    border: 3px solid grey;;
+    padding: 10px;
+    width: 100%;
+    margin-right: auto;
+}
+
+#responseButtons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#responseButtons .submit{
+flex-basis: 50%;
+cursor: pointer;
+}
+
+#responeButtons button.submit:hover{
+    opacity: 1;
+    background-color: blue;
+    color:white;
+}
+
+.loader{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+#healthbars{
+    width: 1450px;
+}
+#slayerHealthBar{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    border: chartreuse solid 3px;
+    background-color: chartreuse;
+    transition: all 0.5s;
+}
+#slayerDamageBar{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    border: red solid 3px;
+    background-color: red;
+}
+#demonHealthBar{
+    position: absolute;
+    right: 0; 
+    justify-content: end;
+    width: 400px;
+    height: 30px;
+    border: chartreuse solid 3px;
+    background-color: chartreuse;
+    text-align: end;
+    transition: all 0.5s;
+}
+
+#demonDamageBar{
+    position: absolute;
+    right: 0; 
+    justify-content: end;
+    width: 400px;
+    height: 30px;
+    border: red solid 3px;
+    background-color: red;
+    text-align: end;
+}
+
+#infoDisplay{
+    border: burlywood solid 3px;
+    background-color: burlywood;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+#zInfoBox{
+    border: goldenrod solid 3px;
+    background-color: goldenrod;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+#tInfoBox{
+    border: lightskyblue solid 3px;
+    background-color: lightskyblue;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+#iInfoBox{
+    border: grey solid 3px;
+    background-color: grey;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+#moneyCounter{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    border: gold solid 3px;
+    background-color: gold;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    right: -50px;
+    text-align: end;
+}
